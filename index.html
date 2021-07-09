@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
+  <link rel="stylesheet" href="./style.css">
+  <title>To-Do List</title>
+</head>
+<body>
+  
+  <div class="container">
+    <header>
+      <h1>To-Do List</h1>
+    </header>
+  
+    <form>
+      <input type="text" class="todo-input" />
+      <button class="todo-button" type="submit">
+        <i class="fas fa-plus"></i>
+      </button>
+      <div class="select-filter">
+        <select name="select-todos" class="filter-items">
+          <option value="all-option">All</option>
+          <option value="completed-option">Completed</option>
+          <option value="uncompleted-option">Uncompleted</option>
+        </select>
+      </div>
+    </form>
+  
+    <div class="todo-container">
+      <ul class="todo-list">
+        <!-- <div class="todo">f
+          <li class="todo-item">Item</li>
+          <button class="check-btn"></button>
+          <button class="delete-btn"></button>
+        </div> -->
+      </ul>
+    </div>
+  </div>
+
+  <script src="./app.js"></script>
+</body>
+</html>
